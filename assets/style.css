@@ -1,0 +1,39 @@
+/* Premier bloc : Votre identité */
+fieldset.identity {
+    background-color: #4CCDDB;
+    max-width: 700px;
+    padding: 10px;
+}
+legend.identity {
+    background-color: #4CCDDB;
+}
+/* Deuxieme bloc : Adresse de livraison */
+fieldset.deliveradress {
+    background-color: #4AB5F3;
+    max-width: 700px;
+    padding: 10px;
+}
+legend.deliveradress{
+    background-color: #4AB5F3;
+}
+/* Troisième bloc : Informations de paiement */
+fieldset.paymentinformations {
+    background-color: #4781E8;
+    max-width: 700px;
+    padding: 10px;
+}
+legend.paymentinformations {
+    background-color: #4781E8;
+}
+/* La petite marge de VISA et MASTERCLAD */
+.cardtype {
+    margin-left: 60px;
+}
+/* Marge sur la gauche */
+ol {
+    margin-left: 15px;
+}
+/* Espace entre les lignes */
+li {
+    line-height: 30px;
+}

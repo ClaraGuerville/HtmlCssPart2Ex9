@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <title>Exercice 9 partie 2</title>
+</head>
+
+<body>
+    <!-- Début du 1er bloc : Votre identité -->
+    <form method="POST" action="#">
+        <fieldset class="identity">
+            <legend class="identity">Votre Identité</legend>
+            <ol>
+                <li>
+                    <label for="civility">Civilité : </label>
+                    <select id="civility" name="Civilité">
+                        <option value="Mme">Mme</option>
+                        <option value="M.">M.</option>
+                        <option value="Mlle">Mlle</option>
+                    </select>
+                </li>
+                <li>
+                    <!--rajouter des names partout-->
+                    <label for="name">Nom : </label>
+                    <input id="name" type="text" placeholder="Nom" />
+                </li>
+                <li> <label for="surname">Prénom : </label>
+                    <input id="surname" type="text" placeholder="Prénom" />
+                </li>
+                <li><label for="mail">Adresse mail : </label>
+                    <input id="mail" type="text" placeholder="Adresse mail" /></li>
+            </ol>
+        </fieldset>
+        <!-- Fin du 1er bloc : Votre identité -->
+
+        <!-- Début du 2eme bloc : Adresse de livraison -->
+        <fieldset class="deliveradress">
+            <legend class="deliveradress">Adresse de livraison</legend>
+            <ol>
+                <li> <label for="place">Adresse : </label>
+                    <textarea id="place" placeholder="70 rue des Jacobins 80000 Amiens"></textarea>
+                </li>
+                <li> <label for="postal">Code Postal :</label>
+                    <input id="postal" type="text" placeholder="Code postal" />
+                </li>
+                <li><label for="city">Ville : </label>
+                <input id="city" type="text" placeholder="Ville" />
+            </li>
+            </ol>
+        </fieldset>
+        <!-- Fin du 2eme bloc : Adresse de livraison -->
+
+        <!-- Début du 3eme bloc : Informations de règlement -->
+        <fieldset class="paymentinformations">
+            <legend class="paymentinformations">Informations de règlement</legend>
+            <ol>
+                <li>Type de carte bancaire : <br>
+                    <label for="visa"><input id="visa" type="radio" name="card" class="cardtype">VISA</label><br>
+                    <label for="mastercard"><input id="mastercard" type="radio" name="card" class="cardtype">Mastercard</label>
+                </li>
+                <li>Numéro de carte : <input type="text" placeholder="Numéro de carte" />
+                </li>
+                <li>Code de sécurité : <input type="text" placeholder="Code de sécurité" />
+                </li>
+                <li>Nom du titulaire : <input type="text" placeholder="Nom du titulaire" />
+                </li>
+            </ol>
+            <input type="checkbox"> Enregistrer ma carte bancaire
+        </fieldset>
+        <input type="submit" value="J'achète!">
+        <!-- Fin du 3eme bloc : Informations de règlement  -->
+    </form>
+</body>
+
+</html>
